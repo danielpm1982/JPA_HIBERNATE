@@ -1,0 +1,117 @@
+fieldset#field1{
+    margin: 60px 400px 0px 400px;
+    text-align: center;
+    border: 15px double bisque;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+label{
+    line-height: 3;
+}
+
+input[type=text]{
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+input[type=submit]{
+    margin-top: 23px;
+    font-size: 20px;
+}
+
+input#clientName{
+    width: 89%;
+}
+
+div#divResult{
+    margin: 60px 400px 0px 400px;
+    text-align: center;
+    border: 15px double bisque;
+    padding-bottom: 30px;
+}
+
+div#divResult2{
+    margin: 100px 100px 100px 105px;
+    text-align: center;
+}
+
+table.t2{
+    line-height: 2;
+    font-size: 20px;
+    margin: 30px 30px 30px 48px;
+    background-color: bisque;
+    border: 0px solid black;
+    padding: 3px 3px 3px 3px;
+}
+
+th.th2{
+    padding: 0px 10px 0px 10px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: bisque;
+}
+
+td.d01{
+    background-color: ivory;
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+    border: 3px solid black;
+}
+
+td.d02{
+    background-color: beige;
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+    border: 3px solid black;
+}
+
+div#link{
+    margin: 40px 5px 5px 5px;
+    line-height: 2;
+    font-family: monospace;
+    font-size: 24px;
+    text-align: center;
+}
+
+p#insertResult{
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: brown;
+}
+
+p#insertResultTrue{
+    color: blue;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+p#insertResultFalse{
+    color: red;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+p#date{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: .5;
+}
+
+div#divResult3{
+    margin: 0px 100px 0px 100px;
+    text-align: center;
+}
+
+fieldset#field2{
+    margin: 0px 400px 0px 400px;
+    text-align: center;
+    border: 15px double bisque;
+    padding: 20px;
+    padding-top: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
