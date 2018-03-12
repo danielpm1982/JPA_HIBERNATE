@@ -1,1 +1,1 @@
-Must add the hibernate framework jars and jee servlet/jsp/jstl jars (if web project) to the classpath of the project for the code to run. Hibernate Jars included.
+Must add the hibernate framework jars, the jee servlet/jsp/jstl jars (if web project) and mysqlConnectorJava jar to the classpath of the project for the code to run. Hibernate Jars included.
