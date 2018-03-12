@@ -7,7 +7,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.List;
 import javax.persistence.*;
-import org.hibernate.envers.Audited;
 
 @Entity
 @Table(name="CLIENT")

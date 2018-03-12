@@ -1,7 +1,6 @@
 package jpa;
 import java.io.Serializable;
 import javax.persistence.*;
-import org.hibernate.envers.Audited;
 
 @Entity
 @Table(name="DEPARTMENT")
