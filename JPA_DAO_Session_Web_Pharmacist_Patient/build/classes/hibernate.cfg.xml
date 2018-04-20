@@ -1,0 +1,31 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/scheme1?useSSL=false</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="connection.pool_size">1</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property> <!--MySQLDialect engine has been deprecated.Using version 5 instead.-->
+        <property name="show_sql">true</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="hbm2ddl.auto">update</property>
+    </session-factory>
+</hibernate-configuration>
+
+<!-- 
+For hbm2dll.auto the values could be:
+- create: it would create the tables each time the factory is created. For avoiding creating at each client request, and
+erase all previous data, the factory creation has been transfered to a InitializerServ class, and set to the servletContext,
+for all servlets to use until the app is ended or the TerminatorServ is called. This works both for the console as for
+the web version.
+- create-drop: would do the same as above, but dropping the schema when factory is closed.
+- update: would validate first and if the table does not exist would create it. Not trustful for some scheme updates. In practice,
+if the tables exist, throws some exceptions but continue smoothly as though as the tables are truncated before being used.
+- validate: does not seem to work because it does not recognize the scheme1 before the table name, and other issues too.
+- not set the hbm2dll.auto property at all: this would work if the scheme already exists (automatically or manually created before).
+
+* The last option is preferable.
+-->
