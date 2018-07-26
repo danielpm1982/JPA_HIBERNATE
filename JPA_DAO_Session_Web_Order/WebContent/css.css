@@ -1,0 +1,77 @@
+@charset "UTF-8";
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+div#table{
+	width: 80%;
+	margin: auto;
+	margin-top: 2em;
+	padding: 0.5em;
+	font-size: 1.5em;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 0.5em;
+}
+div#row{
+	display: table-row;
+}
+div#cell1{
+	background-color: green;
+	display: table-cell;
+	text-align: right;
+}
+div#cell2, div#cell3, div#cell4, div#cell5{
+	background-color: teal;
+	display: table-cell;
+	text-align: left;
+}
+div#cellHeader1, div#cellHeader2, div#cellHeader3, div#cellHeader4, div#cellHeader{
+	display: table-cell;
+	text-align: center;
+	background-color: maroon;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+div#cellHeader1{
+	width: 10%;
+}
+div#cellHeader2{
+	width: 15%;
+}
+div#cellHeader3{
+	width: 40%;
+}
+div#cellHeader4{
+}
+img{
+	margin-top: 5em;
+	width: 5%;
+}
+a:link {
+	color: aqua;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: lime;
+}
+a:active {
+    color: blue;
+}
+h1#allCustomers, h1#resultCustomer{
+	margin-top: 2em;
+	margin-bottom: -1em;
+}
+h1#resultCustomer2{
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+h3#noCustomers{
+	margin-top: 3em;
+}
